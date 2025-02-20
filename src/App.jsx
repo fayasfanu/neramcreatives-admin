@@ -3,7 +3,7 @@ import './App.css'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import NeramFreelancerForm from './Forms/NeramFreelancerForm';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from 'react-router-dom';
 import FreelancerFormDisplay from './Forms/FreelancerFormDisplay';
 
 
@@ -15,7 +15,7 @@ function App() {
  
 
   return (
-    <Router>
+    <>
      <Navbar /> 
         {/* You can include a top navbar if needed */}
      
@@ -26,7 +26,7 @@ function App() {
         </Routes>
   
       <ToastContainer />
-  </Router>
+  </>
   )
 }
 
