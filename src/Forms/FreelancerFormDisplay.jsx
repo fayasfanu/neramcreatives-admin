@@ -47,7 +47,7 @@ const FreelancerFormDisplay = () => {
     fetch(SHEET_URL,
       {
          method: "GET",
-         cors: "no-cors"
+         cors: "no-cors"  
       }
     )
       .then(response => {
