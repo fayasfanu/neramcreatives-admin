@@ -44,7 +44,12 @@ const FreelancerFormDisplay = () => {
   const currentTheme = isDark ? theme.dark : theme.light;
   const fetchData = () => {
     setLoading(true);
-    fetch(SHEET_URL)
+    fetch(SHEET_URL,
+      {
+         method: "GET",
+         cors: "no-cors"
+      }
+    )
       .then(response => {
         if (!response.ok) {
           throw new Error(`Network response was not ok (Status: ${response.status})`);
