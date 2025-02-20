@@ -13,7 +13,7 @@ const Navbar = () => {
           <Link to="/NeramFreelancerForm" className="hover:text-gray-300 transition duration-300">
             Freelancer Form
           </Link>
-        </li>
+        </li>   
         <li>
           <Link to="/FreelancerFormDisplay" className="hover:text-gray-300 transition duration-300">
             Display Form
